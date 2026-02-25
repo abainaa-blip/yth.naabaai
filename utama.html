@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yth.naabaai</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    background: url('planet.jpg') no-repeat center center/cover;
+    overflow:hidden;
+}
+
+/* Overlay gelap */
+.overlay{
+    background:rgba(0,0,0,0.75);
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:60px;
+    position:relative;
+}
+
+/* Efek bintang */
+.overlay::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:transparent;
+    background-image:radial-gradient(white 1px, transparent 1px);
+    background-size:40px 40px;
+    animation:moveStars 60s linear infinite;
+    opacity:0.2;
+}
+
+@keyframes moveStars{
+    from{transform:translateY(0);}
+    to{transform:translateY(-1000px);}
+}
+
+/* Foto profil */
+.profile{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid gold;
+    box-shadow:0 0 25px gold;
+    z-index:2;
+}
+
+/* Nama */
+.nama{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    margin-top:20px;
+    text-shadow:0 0 15px gold;
+    z-index:2;
+}
+
+/* Sambutan */
+.sambutan{
+    color:#ddd;
+    margin:15px 20px 40px;
+    text-align:center;
+    font-size:14px;
+    animation:fadeIn 2s ease-in-out;
+    z-index:2;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+/* Tombol menu */
+.menu{
+    width:90%;
+    max-width:350px;
+    z-index:2;
+}
+
+.menu a{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:15px;
+    margin:15px 0;
+    border-radius:30px;
+    font-weight:bold;
+    color:black;
+    background:white;
+    transition:0.4s;
+}
+
+.menu a:hover{
+    transform:scale(1.07);
+    background:gold;
+    box-shadow:0 0 20px gold;
+}
+</style>
+</head>
+<body>
+
+<div class="overlay">
+    <img src="abai.jpg" class="profile">
+
+    <div class="nama">yth.naabaai</div>
+
+    <div class="sambutan">
+        SELAMAT DATANG JURAGAN MAU CARI APA? SILAHKAN
+    </div>
+
+    <div class="menu">
+        <a href="hal2.html">📞 NO ABAI</a>
+        <a href="hal3.html">📢 LIST SALURAN STOK</a>
+        <a href="hal4.html">🔥 LIST GB JB TERBUKA</a>
+    </div>
+</div>
+
+</body>
+</html>
