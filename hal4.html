@@ -1,62 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>JB RESS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JB RESS TERBUKA</title>
+
 <style>
-body{
+*{
     margin:0;
-    background:url('planet.jpg') no-repeat center center/cover;
+    padding:0;
+    box-sizing:border-box;
     font-family:'Segoe UI',sans-serif;
 }
-.overlay{
-    background:rgba(0,0,0,0.8);
+
+body{
+    background:url('background.jpg') no-repeat center center/cover;
     min-height:100vh;
-    text-align:center;
-    padding-top:50px;
 }
+
+.overlay{
+    background:rgba(0,0,0,0.85);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
 h1{
     color:#00ffcc;
-    margin-bottom:30px;
+    font-size:34px;
+    margin-bottom:45px;
+    letter-spacing:2px;
+    text-shadow:0 0 15px #00ffcc;
 }
+
 a{
     display:block;
-    width:85%;
-    max-width:350px;
-    margin:15px auto;
-    padding:15px;
+    width:95%;
+    max-width:450px;
+    margin:20px 0;
+    padding:22px;
+    text-align:center;
     text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
     color:white;
     border:2px solid #00ffcc;
-    border-radius:10px;
+    border-radius:18px;
     transition:0.4s;
 }
+
 a:hover{
     background:#00ffcc;
     color:black;
-    box-shadow:0 0 15px #00ffcc;
+    box-shadow:0 0 25px #00ffcc;
     transform:scale(1.05);
 }
+
 .back{
     border-color:red;
 }
+
 .back:hover{
     background:red;
-    box-shadow:0 0 15px red;
+    box-shadow:0 0 25px red;
 }
 </style>
 </head>
+
 <body>
 
 <div class="overlay">
-<h1>JB RESS TERBUKA</h1>
+    <h1>JB RESS TERBUKA</h1>
 
-<a href="https://chat.whatsapp.com/GK9qjKHrKe76EQJlEAD6IT?mode=gi_t">JB RESS ABAI 1</a>
-<a href="https://chat.whatsapp.com/BFesIEKBI52B4VzsPVuyFO?mode=gi_t">JB RESS ABAI 2</a>
-<a href="https://chat.whatsapp.com/CbOPz15NxoOCI8jSsMY58t?mode=gi_t">JB RESS ABAI 3</a>
+    <a href="https://chat.whatsapp.com/GK9qjKHrKe76EQJlEAD6IT?mode=gi_t">
+        JB RESS ABAI 1
+    </a>
 
-<a href="index.html" class="back">⬅ Kembali</a>
+    <a href="https://chat.whatsapp.com/BFesIEKBI52B4VzsPVuyFO?mode=gi_t">
+        JB RESS ABAI 2
+    </a>
 
+    <a href="https://chat.whatsapp.com/CbOPz15NxoOCI8jSsMY58t?mode=gi_t">
+        JB RESS ABAI 3
+    </a>
+
+    <a href="index.html" class="back">
+        ⬅ Kembali
+    </a>
 </div>
+
 </body>
 </html>
