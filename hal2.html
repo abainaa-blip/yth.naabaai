@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NO ABAI</title>
 
 <style>
-body{
+*{
     margin:0;
-    background:url('planet.jpg') no-repeat center center/cover;
+    padding:0;
+    box-sizing:border-box;
     font-family:'Segoe UI',sans-serif;
 }
 
-.overlay{
-    background:rgba(0,0,0,0.8);
+body{
+    background:url('background.jpg') no-repeat center center/cover;
     min-height:100vh;
-    text-align:center;
-    padding-top:50px;
-    animation:fadeIn 1s;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.85);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
 h1{
     color:#00ffcc;
-    margin-bottom:30px;
+    font-size:34px;
+    margin-bottom:45px;
+    letter-spacing:2px;
+    text-shadow:0 0 15px #00ffcc;
 }
 
 a{
     display:block;
-    width:85%;
-    max-width:350px;
-    margin:15px auto;
-    padding:15px;
+    width:95%;
+    max-width:450px;
+    margin:20px 0;
+    padding:22px;
+    text-align:center;
     text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
     color:white;
     border:2px solid #00ffcc;
-    border-radius:10px;
+    border-radius:18px;
     transition:0.4s;
 }
 
 a:hover{
     background:#00ffcc;
     color:black;
-    box-shadow:0 0 15px #00ffcc;
+    box-shadow:0 0 25px #00ffcc;
     transform:scale(1.05);
 }
 
@@ -50,26 +65,31 @@ a:hover{
 
 .back:hover{
     background:red;
-    box-shadow:0 0 15px red;
-}
-
-@keyframes fadeIn{
-    from{opacity:0;}
-    to{opacity:1;}
+    box-shadow:0 0 25px red;
 }
 </style>
 </head>
+
 <body>
 
 <div class="overlay">
-<h1>NO ABAI</h1>
+    <h1>NO ABAI</h1>
 
-<a href="https://wa.me/6289528286106">NO ABAI UTAMA</a>
-<a href="https://wa.me/6283147698506">NO ABAI 2</a>
-<a href="https://wa.me/6283131129828">NO ABAI 3 (CADANGAN)</a>
+    <a href="https://wa.me/6289528286106">
+        NO ABAI UTAMA
+    </a>
 
-<a href="index.html" class="back">⬅ Kembali</a>
+    <a href="https://wa.me/6283147698506">
+        NO ABAI 2
+    </a>
 
+    <a href="https://wa.me/6283131129828">
+        NO ABAI 3 (CADANGAN)
+    </a>
+
+    <a href="index.html" class="back">
+        ⬅ Kembali
+    </a>
 </div>
 
 </body>
